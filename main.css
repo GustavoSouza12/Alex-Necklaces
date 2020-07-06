@@ -48,6 +48,18 @@ p{
 .lua{
    color: #F4F1C9;
 }
+.gato{
+    color: #807f7d;
+}
+.turquesa{
+    color: #40e0d0 ;
+}
+.agata-negra{
+    color: rgba(138, 63, 63, 0.918);
+}
+.quartzo-verde{
+    color: #aec09c ;
+}
 
 
 
@@ -72,8 +84,8 @@ p{
 
     }
     100%{
-        transform: translateY(-1000px);
-      
+        transform: translateY(-2000px);
+        visibility: hidden;
     }
 }
 .intro-title{
@@ -164,15 +176,11 @@ p{
    color: rgb(240, 181, 94);
    font-weight: 700;
 }
-.line-title::after{
-    position: absolute;
-    content: '';
-    top: 30%;
-    left: 12%;
-    width: 20%;
-    height: 3px;
-    background-color: rgb(231, 154, 10);
+.title-inicio{
+    position: relative;
+    margin-left: 20px;
 }
+
 section#inicio{
  
   
@@ -210,11 +218,11 @@ section h1{
 }
 @keyframes title{
     0%{opacity: 0;}
-    100%{opacity: 1; transform: translatex(0px);}
+    100%{opacity: 1; transform: translatex(-10px);}
 }
 @-webkit-keyframes title{
     0%{opacity: 0;}
-    100%{opacity: 1; -webkit-transform: translatex(0px);}
+    100%{opacity: 1; -webkit-transform: translatex(-10px);}
 }
 .inner{
     overflow: hidden;
@@ -330,6 +338,33 @@ section h1{
     -webkit-animation-duration: 1s;
     -webkit-animation-fill-mode: forwards;
 }
+
+
+.five-img{
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    padding: 10px;;
+    height: 300px;
+    width: 400px;
+    -ms-transform: rotate(20deg); /* IE 9 */
+    transform: rotate(20deg);
+    border: solid 2px var(--color-blue);
+    
+}
+
+.six-img{
+    position: absolute;
+    top: 80%;
+    right: 5%;
+    padding: 10px;;
+    height: 300px;
+    width: 400px;
+    -ms-transform: rotate(-20deg); /* IE 9 */
+    transform: rotate(-20deg);
+    border: solid 2px var(--color-blue);
+    
+}
 .four-img:hover{
     transform: scale(1.1);
     transition: 1.2s ease;
@@ -350,8 +385,9 @@ section h1{
 .card{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 5rem;
+    grid-gap: 50px;
     overflow: hidden;
+    margin: 30px 0px;
 }
 
 .colaresContainer{
@@ -368,16 +404,13 @@ section h1{
  
 }
 .content-container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+   
     width: 80%;
+    height: auto;
 }
 .card img{
     height: 400px;
     width: 100%;
-   margin-left:50px ;
 }
 
 section#colares{
@@ -386,28 +419,48 @@ section#colares{
 .margin-img{
     margin-bottom: 20px;
 }
-.hover-effect1, .hover-effect2, .hover-effect3, .hover-effect4{
+.hover-effect1, .hover-effect2, .hover-effect3, .hover-effect4, .hover-effect5,.hover-effect6, .hover-effect7, .hover-effect8{
     transition: 1s ease;
 }
 .hover-effect1:hover{
     border-radius: 80%;
-   
-    border: 5px solid red;
+    transform: scale(0.9);
+    border: 3px solid red;
 }
 .hover-effect2:hover{
     border-radius: 80%;
-   
-    border:5px solid #a7d8de;
+    transform: scale(0.9);
+    border:3px solid #a7d8de;
 }
 .hover-effect3:hover{
     border-radius: 80%;
-    
-    border: 5px solid rgb(224, 48, 166);
+    transform: scale(0.9);
+    border: 3px solid rgb(224, 48, 166);
 }
 .hover-effect4:hover{
     border-radius: 80%;
-    
-    border: 5px solid #F4F1C9;
+    transform: scale(0.9);
+    border: 3px solid #F4F1C9;
+}
+.hover-effect5:hover{
+    border-radius: 80%;
+    transform: scale(0.9);
+    border: 3px solid #807f7d;
+}
+.hover-effect6:hover{
+    border-radius: 80%;
+    transform: scale(0.9);
+    border: 3px solid #40e0d0;
+}
+.hover-effect7:hover{
+    border-radius: 80%;
+    transform: scale(0.9);
+    border: 3px solid rgba(138, 63, 63, 0.918);;
+}
+.hover-effect8:hover{
+    border-radius: 80%;
+    transform: scale(0.9);
+    border: 3px solid #aec09c;
 }
 .hover-effect:hover  .colaresContent{
     font-size: 2px;
@@ -473,11 +526,11 @@ section#colares{
  }
 #contato ul li:hover span:nth-child(2){
     transform: translate(20px, -20px);
-    opacity: .8; 
+    opacity: .4; 
  }
 #contato ul li:hover span:nth-child(1){
-    transform: translate(0, 0);
-    opacity: .2; 
+    transform: translate(0px, 0px);
+    opacity: .8; 
  }
 
 #contato ul li:nth-child(1) span{
@@ -512,7 +565,7 @@ footer{
     font-family: "Oswald", sans;
     letter-spacing: 1px;
     border-top: 2px solid #ccd0d3;
-    border-bottom: 2px solid #ccd0d3;
+  
   }
   footer a:link{
     text-decoration: none;
@@ -528,9 +581,66 @@ footer{
       text-decoration:none;
   
   }
+  @media screen and (max-width: 1300px){
+      body{
+          max-width: 1300px;
+          margin: 0;
+          padding: 0;
+      }
+      section h1{
+        padding-top: 20px;
+        margin-left: 10px;
+        font-size: 40px;
 
+    }
+    .colares-img{
+        width: 150px;
+        height: 150px;
+        left: 47%;
+    }
+    .second-img{
+        width: 150px;
+        height: 180px;
+    }
+    .third-img{
+        width: 150px;
+        height: 180px;
+        left: 70%;
+    }
+    .four-img{
+        width: 150px;
+        height: 180px;
+        
+    }
+    .five-img{
+       
+        top: 80%;
+        left: 8%;
 
-@media screen and (max-width: 768px){
+        height: 200px;
+        width: 320px;
+        
+    }
+    
+    .six-img{
+      
+        top: 80%;
+        right: 8%;
+      
+        height: 200px;
+        width: 320px;
+        
+    }
+  }
+
+@media screen and (max-width: 1000px){
+    body{
+        max-width: 1000px;
+        margin-left: 15px;
+    }
+    p{
+        font-size: 12px;
+    }
     h2{
         font-size: 100px;
     }
@@ -568,6 +678,25 @@ footer{
         height: 150px;
         
     }
+    .five-img{
+       
+        top: 80%;
+        left: 5%;
+
+        height: 200px;
+        width: 250px;
+        
+    }
+    
+    .six-img{
+      
+        top: 80%;
+        right: 5%;
+      
+        height: 200px;
+        width: 250px;
+        
+    }
     @keyframes colar{
         0%{opacity: 0;}
         50%{height: 200px;}
@@ -589,7 +718,7 @@ footer{
         
     }
     .hover-effect1{
-        border-radius: 80%;
+        border-radius: 70%;
    
         border: 5px solid red;
     }
@@ -608,4 +737,66 @@ footer{
         
         border: 5px solid #F4F1C9;
     }
+    .hover-effect5{
+        border-radius: 80%;
+        
+        border: 5px solid #807f7d;
+    }
+    .hover-effect6{
+        border-radius: 80%;
+        
+        border: 5px solid #40e0d0 ;
+    }
+    .hover-effect7{
+        border-radius: 80%;
+        
+        border: 5px solid rgba(138, 63, 63, 0.918);
+    }
+    .hover-effect8{
+        border-radius: 80%;
+        
+        border: 5px solid #aec09c;
+    }
+}
+@media screen and (max-width: 500px){
+    body{
+        max-width: 800px;
+       
+    }
+    h2{
+        font-size:70px;
+    }
+    .five-img{
+        top: 70%;
+        height: 100px;
+        -ms-transform: rotate(-20deg); /* IE 9 */
+        transform: rotate(-20deg);
+    }
+    .six-img{
+        top: 92%;
+        height: 100px;
+    }
+    #colares{
+        margin: 0 auto;
+    }
+    .card{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0;
+        margin: 0 auto;
+    }
+    .card img{
+        height: 350px;
+        width: 80%;
+    }
+    
+    .colaresContainer{
+        margin: 0 13px;
+    }
+    #contato ul li{
+        width: 50px; 
+        height: 40px;
+        padding: 10px 10px;
+    }
+    
 }

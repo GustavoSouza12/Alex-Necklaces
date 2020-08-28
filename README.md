@@ -1,5 +1,5 @@
 # 💻📱 Alex Necklaces 💻📱
-➡️ My freelancer project for a entrepreneur that sells necklaces ⬅️ 
+➡️ My first freelancer project for a entrepreneur that sells necklaces ⬅️ 
 
 ![](https://img.shields.io/github/languages/count/GustavoSouza12/Alex-Necklaces)
 ![](https://img.shields.io/github/languages/top/GustavoSouza12/Alex-Necklaces)
